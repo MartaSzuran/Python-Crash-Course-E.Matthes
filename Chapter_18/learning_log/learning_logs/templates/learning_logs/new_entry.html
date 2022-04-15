@@ -1,0 +1,22 @@
+{% extends "learning_logs\base.html" %}
+{% load bootstrap3 %}
+
+{% block header %}
+  <h2>Add entry</h2>
+{% endblock header %}
+
+
+{% block content %}
+
+  <form action="{% url 'new_entry' topic.id %}" method='post' class="form">
+    <!-- cross-site request forgery -->
+    {% csrf_token %}
+    <!-- create form / as_p - show every element in paragraph -->
+    {% bootstrap_form form %}
+
+    {% buttons %}
+      <button type="submit" class="btn btn-primary">Add entry</button>
+    {% endbuttons %}
+  </form>
+
+{% endblock content %}

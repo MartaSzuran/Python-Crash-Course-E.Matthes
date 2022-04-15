@@ -1,0 +1,2 @@
+Existence of that file guarantee that, catalog learning_log/static will be addad to the project.
+Django will gather all static file and place it into learning_log/static

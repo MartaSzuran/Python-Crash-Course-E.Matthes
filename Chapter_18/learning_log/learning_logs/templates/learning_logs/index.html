@@ -1,0 +1,19 @@
+{% extends "learning_logs\base.html" %}
+{% block header %}
+    <div class='jumbotron'>
+      <h1>Track your progress in learning</h1>
+    </div>
+  {% endblock header %}
+
+{% block content %}
+  <h2>
+    <a href="{% url 'register' %}">Register your account</a>,
+    to start using app Learning Log and see list of topic
+  </h2>
+  <h2>
+    If you learn something new, add it in propitiate topic and add some revision to it.
+  </h2>
+
+  <p>Learning Log helps to track progress in learning.</p>
+
+{% endblock content %}
